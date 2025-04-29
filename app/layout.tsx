@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Instituto Bruno Marques - Rejuvenescimento Facial e Corporal",
   description: "Tratamentos estéticos avançados para rejuvenescimento facial e corporal",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
