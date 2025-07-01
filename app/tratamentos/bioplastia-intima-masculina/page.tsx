@@ -37,7 +37,7 @@ export default function BioplastiaIntimaMasculina() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] text-lg px-8"
-              onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+              onClick={() => window.open("https://wa.me/554799961355", "_blank")}
             >
               Agende sua Consulta
             </Button>
@@ -256,7 +256,7 @@ export default function BioplastiaIntimaMasculina() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] text-lg px-8"
-                onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+                onClick={() => window.open("https://wa.me/554799961355", "_blank")}
               >
                 Agende sua Avaliação
               </Button>
@@ -383,7 +383,7 @@ export default function BioplastiaIntimaMasculina() {
           <Button
             size="lg"
             className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] text-lg px-12"
-            onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+            onClick={() => window.open("https://wa.me/554799961355", "_blank")}
           >
             Agende sua Consulta
           </Button>
@@ -509,7 +509,7 @@ export default function BioplastiaIntimaMasculina() {
 
               <Button
                 className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052]"
-                onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+                onClick={() => window.open("https://wa.me/554799961355", "_blank")}
               >
                 Agende uma Consulta com Dr. Bruno
               </Button>
@@ -529,7 +529,7 @@ export default function BioplastiaIntimaMasculina() {
           <Button
             size="lg"
             className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] text-lg px-12"
-            onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+            onClick={() => window.open("https://wa.me/554799961355", "_blank")}
           >
             Agende sua Consulta
           </Button>

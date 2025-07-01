@@ -266,7 +266,7 @@ export default function CursoEndolaser() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Pronto para dominar o Endolaser?</h2>
           <p className="text-xl mb-8">Inscreva-se agora e revolucione seus tratamentos estéticos!</p>
-          <Link href="https://wa.me/5547992865256" passHref>
+          <Link href="https://wa.me/554799961355" passHref>
             <div className="flex justify-center">
               <Button size="lg" className="bg-white text-gold hover:bg-gray-100">
                 Garantir Minha Vaga

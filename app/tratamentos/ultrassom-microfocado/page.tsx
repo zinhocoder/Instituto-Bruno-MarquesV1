@@ -235,7 +235,7 @@ export default function UltrassomMicrofocado() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Pronto para rejuvenescer sua pele?</h2>
           <p className="text-xl mb-8">Agende sua sessão de Ultrassom Microfocado hoje mesmo!</p>
-          <Link href="https://wa.me/5547992865256" passHref>
+          <Link href="https://wa.me/554799961355" passHref>
             <Button size="lg" className="bg-white text-gold hover:bg-gray-100">
               Agendar Consulta
             </Button>

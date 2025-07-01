@@ -48,7 +48,7 @@ export default function CursoPreenchedores() {
             </ul>
             <Button
               className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052]"
-              onClick={() => window.open("https://wa.me/5547992865256", "_blank")}
+              onClick={() => window.open("https://wa.me/554799961355", "_blank")}
             >
               Inscreva-se Agora
             </Button>

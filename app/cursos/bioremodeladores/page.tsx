@@ -100,7 +100,7 @@ export default function CursoBioremodeladores() {
                     <strong>Certificação:</strong> Certificado de conclusão emitido pelo Instituto Bruno Marques
                   </li>
                 </ul>
-                <Link href="https://wa.me/5547992865256" passHref>
+                <Link href="https://wa.me/554799961355" passHref>
                   <div className="flex">
                     <Button className="bg-gold text-white hover:bg-[#D4AF37] transition-colors duration-300 text-lg px-8 py-3">
                       Inscreva-se Agora
@@ -212,7 +212,7 @@ export default function CursoBioremodeladores() {
         <section className="text-center mt-16">
           <h2 className="text-3xl font-bold mb-4">Pronto para dominar as técnicas de bioremodelação?</h2>
           <p className="text-xl text-gray-600 mb-8">Inscreva-se agora e transforme sua prática em medicina estética!</p>
-          <Link href="https://wa.me/5547992865256" passHref>
+          <Link href="https://wa.me/554799961355" passHref>
             <div className="flex justify-center">
               <Button className="bg-gold text-white hover:bg-[#D4AF37] transition-colors duration-300 text-lg px-12 py-4">
                 Garantir Minha Vaga

@@ -337,7 +337,7 @@ export default function HarmonizacaoFacial() {
           <h2 className="text-3xl font-bold mb-4">Pronto para transformar sua aparência?</h2>
           <p className="text-xl mb-8">Agende sua consulta de Harmonização Facial hoje mesmo!</p>
           <div className="flex justify-center">
-            <WhatsAppButton phoneNumber="5547992865256" size="lg">
+            <WhatsAppButton phoneNumber="554799961355" size="lg">
               Agendar Consulta
             </WhatsAppButton>
           </div>
