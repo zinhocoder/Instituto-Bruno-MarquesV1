@@ -342,16 +342,6 @@ export default function Home() {
               className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 1 ? 'bg-white' : 'bg-white/40'}`}
             />
           </div>
-
-          {/* Scroll indicator sutil */}
-          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
-            <div className="flex flex-col items-center text-white font-medium drop-shadow-lg">
-              <span className="text-xs mb-2">Role para descobrir</span>
-              <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-white/90 rounded-full mt-2 animate-bounce"></div>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* About Section */}
