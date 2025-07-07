@@ -12,19 +12,17 @@ export function SpecialistsSection() {
 
   const specialists = [
     {
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design-sem-nome-1-JJsvhxzVKqZnICWvsarksy5eyHgkpR.png",
+      image: "/jessica.jpg",
       name: "Dra. Jessica Dalago",
       description:
-        "Especialista em Harmonização Facial e Procedimentos Estéticos Avançados com mais de 10 anos de experiência. Formada pela UFSC com especialização em Dermatologia Estética.",
-      specialties: ["Harmonização Facial", "Preenchimento Labial", "Toxina Botulínica", "Bioestimuladores de Colágeno"],
+        "Especialista em Harmonização Facial e Procedimentos Estéticos Avançados. Formada pela UFSC com especialização em Dermatologia Estética.",
+      specialties: ["Harmonização Facial", "Preenchimento Labial", "Toxina Botulínica", "Bioestimuladores de Colágeno", "Skinbooster", "Limpeza de Pele"],
     },
     {
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design-sem-nome-uVAP8mggeSLNSSoyThKGv5p9VGSd7y.png",
+      image: "/bruno.jpg",
       name: "Dr. Bruno Marques",
       description:
-        "Formado em Medicina e Fisioterapia, com especialização em Dermatofuncional e Fundador do Instituto e especialista em Medicina Estética Avançada. Referência em procedimentos estéticos minimamente invasivos e tratamentos personalizados.",
+        "Formado em Medicina e Fisioterapia, com especialização em Dermatofuncional e Fundador do Instituto Bruno Marques. Especialista em Medicina Estética Avançada. Referência em procedimentos estéticos minimamente invasivos e tratamentos personalizados.",
       specialties: [
         "Medicina Estética Avançada",
         "Protocolos Exclusivos",
@@ -102,8 +100,8 @@ export function SpecialistsSection() {
                         {activeSpecialist === index && (
                           <div className="absolute inset-0 bg-black/70 rounded-lg flex items-center justify-center">
                             <Image
-                              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design%20sem%20nome%20(55)-Z21nB3a4LEyAAUidpgAEFMW1pjyuN3.png"
-                              alt="Decorative Element"
+                              src="/instituto-11.png"
+                              alt="Logo Instituto Bruno Marques"
                               width={100}
                               height={50}
                               className="absolute top-4 left-4"
@@ -177,8 +175,8 @@ export function SpecialistsSection() {
                 />
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design%20sem%20nome%20(55)-Z21nB3a4LEyAAUidpgAEFMW1pjyuN3.png"
-                    alt="Decorative Element"
+                    src="/instituto-11.png"
+                    alt="Logo Instituto Bruno Marques"
                     width={100}
                     height={50}
                     className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

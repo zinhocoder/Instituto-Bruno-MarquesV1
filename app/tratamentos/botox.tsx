@@ -2,6 +2,7 @@
 
 import Layout from "@/components/layout"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 
 export default function Botox() {
@@ -36,6 +37,32 @@ export default function Botox() {
             </Button>
           </div>
         </div>
+
+        {/* Especialistas */}
+        <section className="py-16 bg-gray-50 mt-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Nosso Especialista</h2>
+            <div className="flex justify-center">
+              <Card className="max-w-md">
+                <CardContent className="p-6 text-center">
+                  <Image
+                    src="/bruno.jpg"
+                    alt="Dr. Bruno Marques"
+                    width={200}
+                    height={200}
+                    className="rounded-full mx-auto mb-4 object-cover"
+                  />
+                  <h3 className="text-xl font-semibold mb-2">Dr. Bruno Marques</h3>
+                  <p className="text-gold font-medium mb-3">Médico Especialista</p>
+                  <p className="text-gray-600 text-sm">
+                    Especialista em medicina estética e tratamentos com toxina botulínica.
+                    Profissional dedicado a proporcionar resultados naturais e seguros.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </div>
     </Layout>
   )

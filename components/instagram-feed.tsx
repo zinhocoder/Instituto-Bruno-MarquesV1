@@ -10,23 +10,18 @@ import Link from "next/link"
 const instagramPosts = [
   {
     id: "post1",
-    imageUrl: "/11 Promocoes.jpg?height=400&width=400&text=Antes+e+Depois",
-    caption:
-      "✨ Adeus, rugas! Olá, pele lisa! ✨ 📅 Vagas limitadas! Reserve já. #BelezaSemRugas #ToxinaBotulínica #PeleRenovada",
-    date: "2 dias atrás",
+    imageUrl: "/post1.jpg",
+    likes: "1.2k",
   },
   {
     id: "post2",
-    imageUrl: "/11 Promocoes4.jpg?height=400&width=400&text=Curso+Toxina",
-    caption:
-      "💋 Lábios mais volumosos e harmoniosos! 💋 📅 Agende seu horário! #LábiosPerfeitos #PreenchimentoLabial #BelezaNatural",
-    date: "4 dias atrás",
+    imageUrl: "/post2.jpg",
+    likes: "856",
   },
   {
     id: "post3",
-    imageUrl: "/11 Promocoes7.jpg?height=400&width=400&text=Dica+Skincare",
-    caption: "🔥 Adeus flacidez, olá firmeza! 🔥 📅 Agende sua avaliação! #PeleFirme #Endolaser #BelezaSemCirurgia",
-    date: "1 semana atrás",
+    imageUrl: "/post3.jpg",
+    likes: "2.1k",
   },
 ]
 
@@ -93,16 +88,10 @@ export function InstagramFeed() {
                 </div>
               </div>
               <div className="p-4">
-                <div className="flex justify-between items-center mb-3">
-                  <div className="flex space-x-3">
-                    <Heart className="w-6 h-6 text-rose-500 fill-rose-500 hover:scale-110 transition-transform cursor-pointer" />
-                    <MessageCircle className="w-6 h-6 text-blue-500 hover:scale-110 transition-transform cursor-pointer" />
-                    <Share2 className="w-6 h-6 text-green-500 hover:scale-110 transition-transform cursor-pointer" />
-                  </div>
-                  <Bookmark className="w-6 h-6 text-gold hover:fill-gold hover:scale-110 transition-all cursor-pointer" />
+                <div className="flex items-center space-x-2">
+                  <Heart className="w-5 h-5 text-rose-500 fill-rose-500" />
+                  <span className="text-sm font-medium text-gray-700">{post.likes}</span>
                 </div>
-                <p className="text-gray-700 text-sm line-clamp-2 mb-2">{post.caption}</p>
-                <p className="text-xs text-gray-500">{post.date}</p>
               </div>
             </div>
           ))}

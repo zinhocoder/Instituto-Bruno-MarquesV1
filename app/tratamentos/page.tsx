@@ -10,10 +10,10 @@ import { useEffect, useState } from "react"
 
 const treatments = [
   {
-    name: "Bioplastia Íntima Masculina",
-    description: "Procedimento para aumento e modelagem peniana.",
-    image: "/photo_2023-05-12_15-13-08.png?height=300&width=400&text=Bioplastia+Íntima+Masculina",
-    link: "/tratamentos/bioplastia-intima-masculina",
+    name: "Harmonização Íntima Masculina",
+    description: "Procedimento para harmonização e modelagem íntima masculina.",
+    image: "/photo_2023-05-12_15-13-08.png?height=300&width=400&text=Harmonizacao+Intima+Masculina",
+    link: "/tratamentos/harmonizacao-intima-masculina",
   },
   {
     name: "Preenchimento Labial",
@@ -134,8 +134,8 @@ export default function Treatments() {
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Nossos Tratamentos</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {treatments.map((treatment, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-4 md:p-6">
+            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+              <CardContent className="p-4 md:p-6 flex flex-col h-full">
                 <div className="aspect-[4/3] relative mb-4 overflow-hidden rounded-md">
                   <Image
                     src={treatment.image || "/placeholder.svg"}
@@ -145,10 +145,12 @@ export default function Treatments() {
                   />
                 </div>
                 <h2 className="text-lg md:text-xl font-semibold mb-2 line-clamp-2">{treatment.name}</h2>
-                <p className="text-sm md:text-base text-gray-600 mb-4 line-clamp-2">{treatment.description}</p>
-                <Link href={treatment.link} passHref>
-                  <Button className="w-full bg-gold hover:bg-[#D4AF37] text-white">Saiba Mais</Button>
-                </Link>
+                <p className="text-sm md:text-base text-gray-600 mb-4 line-clamp-2 flex-grow">{treatment.description}</p>
+                <div className="mt-auto">
+                  <Link href={treatment.link} passHref>
+                    <Button className="w-full bg-gold hover:bg-[#D4AF37] text-white">Saiba Mais</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           ))}

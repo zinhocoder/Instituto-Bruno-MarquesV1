@@ -13,8 +13,8 @@ const courses = [
   { name: "Temporal face lifting", link: "/cursos/temporal-face-lifting" },
   { name: "Preenchedores (facial e corporal)", link: "/cursos/preenchedores" },
   {
-    name: "Bioplastia íntima masculina (aumento peniano)",
-    link: "/cursos/bioplastia-intima-masculina",
+    name: "Harmonização íntima masculina",
+    link: "/cursos/harmonizacao-intima-masculina",
   },
   { name: "Bioremodeladores (Pdrn, Exossomos e profhilo)", link: "/cursos/bioremodeladores" },
 ]

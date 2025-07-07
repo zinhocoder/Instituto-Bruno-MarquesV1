@@ -165,8 +165,34 @@ export default function HarmonizacaoFacial() {
         </div>
       </section>
 
-      {/* Vantagens */}
+      {/* Especialistas */}
       <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Nosso Especialista</h2>
+          <div className="flex justify-center">
+            <Card className="max-w-md">
+              <CardContent className="p-6 text-center">
+                <Image
+                  src="/bruno.jpg"
+                  alt="Dr. Bruno Marques"
+                  width={200}
+                  height={200}
+                  className="rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-xl font-semibold mb-2">Dr. Bruno Marques</h3>
+                <p className="text-gold font-medium mb-3">Médico Especialista</p>
+                <p className="text-gray-600 text-sm">
+                  Especialista em harmonização facial e medicina estética.
+                  Profissional dedicado a proporcionar resultados naturais e harmoniosos.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Vantagens */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Por que escolher nossa Harmonização Facial?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

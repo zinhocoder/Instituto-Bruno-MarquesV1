@@ -10,9 +10,9 @@ import { useEffect, useState } from "react"
 
 const courses = [
   {
-    name: "Bioplastia Íntima Masculina",
-    description: "Aprenda procedimentos de aumento peniano e modelagem íntima masculina.",
-    link: "/cursos/bioplastia-intima-masculina",
+    name: "Harmonização Íntima Masculina",
+    description: "Aprenda procedimentos de harmonização íntima masculina e modelagem íntima.",
+    link: "/cursos/harmonizacao-intima-masculina",
   },
   {
     name: "Toxina Botulínica",
@@ -71,16 +71,18 @@ export default function Courses() {
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Nossos Cursos</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {courses.map((course, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-4 md:p-6">
+            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 flex flex-col">
+              <CardContent className="p-4 md:p-6 flex flex-col flex-grow">
                 <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-4 mx-auto">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h2 className="text-lg md:text-xl font-semibold mb-2 text-center line-clamp-2">{course.name}</h2>
-                <p className="text-sm md:text-base text-gray-600 mb-4 text-center line-clamp-3">{course.description}</p>
-                <Link href={course.link} passHref>
-                  <Button className="w-full bg-gold hover:bg-[#D4AF37] text-white">Saiba Mais</Button>
-                </Link>
+                <p className="text-sm md:text-base text-gray-600 mb-4 text-center line-clamp-3 flex-grow">{course.description}</p>
+                <div className="mt-auto">
+                  <Link href={course.link} passHref>
+                    <Button className="w-full bg-gold hover:bg-[#D4AF37] text-white">Saiba Mais</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           ))}

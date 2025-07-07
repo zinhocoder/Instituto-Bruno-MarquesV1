@@ -1,21 +1,15 @@
 "use client"
 
 import * as React from "react"
-
+import { useCallback, useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 
 const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, children, ...props }, ref) => {
-    const [api, setApi] = React.useState<any>(null)
-
     return (
       <div className="relative">
         <div ref={ref} className={cn("overflow-hidden", className)} {...props}>
-          {React.Children.map(children, (child) => {
-            return React.cloneElement(child as React.ReactElement, {
-              setApi,
-            })
-          })}
+          {children}
         </div>
       </div>
     )
@@ -64,13 +58,13 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.HTMLAttribute
 CarouselPrevious.displayName = "CarouselPrevious"
 
 function useCarousel() {
-  const [api, setApi] = React.useState<any>(null)
+  const [api, setApi] = useState<any>(null)
 
-  const scrollNext = React.useCallback(() => {
+  const scrollNext = useCallback(() => {
     api?.scrollNext()
   }, [api])
 
-  const scrollPrev = React.useCallback(() => {
+  const scrollPrev = useCallback(() => {
     api?.scrollPrev()
   }, [api])
 

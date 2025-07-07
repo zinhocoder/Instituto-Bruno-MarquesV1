@@ -5,7 +5,7 @@ export default function Logo() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-black p-4">
       <div className="max-w-lg w-full text-center space-y-2">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Imagem%20do%20WhatsApp%20de%202025-02-04%20%C3%A0(s)%2015.40.02_c7cf976d.jpg-dyezohGc0JnFRFlmujBlzhOkzib9oJ.jpeg"
+          src="/instituto-11.png"
           alt="Instituto Bruno Marques Logo"
           width={400}
           height={400}

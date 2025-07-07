@@ -42,15 +42,15 @@ export default function Home() {
   return (
     <div className={`min-h-screen bg-white`}>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
-        <div className="container mx-auto px-4">
-          <nav className="flex justify-center py-6">
-            <ul className="flex space-x-8 bg-gradient-to-r from-[#C4A052] to-[#D4AF37] rounded-full px-8 py-3 shadow-md">
+      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out bg-white/90 backdrop-blur-sm">
+        <div className="container mx-auto px-1 sm:px-2 md:px-4">
+          <nav className="flex justify-center py-1 sm:py-2 md:py-3 lg:py-4">
+            <ul className="flex flex-wrap justify-center gap-0.5 sm:gap-1 md:gap-2 lg:gap-4 bg-gradient-to-r from-[#C4A052] to-[#D4AF37] rounded-full px-1 sm:px-2 md:px-4 lg:px-6 py-1 sm:py-2 md:py-3 shadow-lg">
               {["Sobre", "Tratamentos", "Cursos", "Resultados", "Feedbacks", "Contato"].map((item) => (
                 <li key={item}>
                   <Link
                     href={`#${item.toLowerCase()}`}
-                    className="text-white hover:text-gray-100 transition-colors duration-300 font-semibold"
+                    className="text-white hover:text-gray-100 transition-colors duration-300 font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap px-0.5 sm:px-1 md:px-2"
                     onClick={(e) => {
                       e.preventDefault()
                       document.querySelector(`#${item.toLowerCase()}`)?.scrollIntoView({
@@ -58,7 +58,7 @@ export default function Home() {
                       })
                     }}
                   >
-                    <span className="relative z-10">{item}</span>
+                    {item}
                   </Link>
                 </li>
               ))}
@@ -83,18 +83,23 @@ export default function Home() {
           <Image src="/IMG_3608.jpg" alt="Hero Background" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black opacity-50" />
         </div>
-        <div className="relative z-10 space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold">Instituto Bruno Marques</h1>
-          <p className="text-xl md:text-2xl">Rejuvenescimento Facial e Corporal</p>
+        <div className="relative z-10 space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 px-2 sm:px-4 md:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight break-words overflow-hidden">
+            Instituto Bruno Marques
+          </h1>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl max-w-2xl mx-auto px-1 sm:px-2 break-words overflow-hidden">
+            Rejuvenescimento Facial e Corporal
+          </p>
           <Button
             size="lg"
-            className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052]"
+            className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] text-xs sm:text-sm md:text-base lg:text-lg px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 md:py-4 shadow-lg"
             onClick={() => window.open("https://wa.me/554799961355", "_blank")}
           >
             Agende sua Consulta
           </Button>
         </div>
       </section>
+
       {/* About Section */}
       <section id="sobre" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -107,8 +112,7 @@ export default function Home() {
                 modernas técnicas e tecnologias para garantir resultados excepcionais e naturais.
               </p>
               <Button
-                variant="outline"
-                className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052] border-none"
+                className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-black hover:from-[#D4AF37] hover:to-[#C4A052] hover:text-white shadow-lg font-bold text-base"
                 onClick={() => {
                   document.querySelector("#tratamentos")?.scrollIntoView({
                     behavior: "smooth",
@@ -129,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Treatments Section */}
       <section id="tratamentos" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -175,7 +180,7 @@ export default function Home() {
                   "Endolaser (corporal e facial)",
                   "Temporal face lifting",
                   "Preenchedores (facial e corporal)",
-                  "Bioplastia íntima masculina (aumento peniano)",
+                  "Harmonização íntima masculina",
                   "Bioremodeladores (Pdrn, Exossomos e profhilo)",
                 ].map((course, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -368,7 +373,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <Image
-                src="/brunomarqueslogo.png?height=500&width=500&text=Instituto+Bruno+Marques"
+                src="/instituto-11.png"
                 alt="Instituto Bruno Marques Logo"
                 width={120}
                 height={120}

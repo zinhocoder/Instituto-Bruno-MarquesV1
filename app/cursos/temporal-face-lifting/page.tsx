@@ -32,7 +32,7 @@ export default function CursoTemporalFaceLifting() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src="/placeholder.svg?height=400&width=600&text=Temporal+Face+Lifting"
+          src="/lifting-facial-não-cirúrgico.jpeg"
           alt="Curso de Temporal Face Lifting"
           layout="fill"
           objectFit="cover"
@@ -94,7 +94,7 @@ export default function CursoTemporalFaceLifting() {
               {/* Imagem no topo para mobile */}
               <div className="flex justify-center mb-8">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=Temporal+Face+Lifting"
+                  src="/lifting-facial-não-cirúrgico.jpeg"
                   alt="Temporal Face Lifting"
                   width={300}
                   height={200}
@@ -140,7 +140,7 @@ export default function CursoTemporalFaceLifting() {
               </div>
               <div>
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=Temporal+Face+Lifting"
+                  src="/lifting-facial-não-cirúrgico.jpeg"
                   alt="Temporal Face Lifting"
                   width={500}
                   height={300}
@@ -174,29 +174,79 @@ export default function CursoTemporalFaceLifting() {
         </div>
       </section>
 
-      {/* Instrutor Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Dr. Bruno Marques Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Conheça o Instrutor</h2>
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-            <Image
-              src="/placeholder.svg?height=200&width=200&text=Dr.+Bruno+Marques"
-              alt="Dr. Bruno Marques"
-              width={200}
-              height={200}
-              className="rounded-full"
-            />
+          <div className="text-center mb-16">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">Dr. Bruno Marques</h2>
+            <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
+              Referência nacional em Temporal Face Lifting e seu mentor neste curso exclusivo
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/bruno.jpg"
+                alt="Dr. Bruno Marques"
+                width={400}
+                height={500}
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Dr. Bruno Marques</h3>
-              <p className="text-gray-600 mb-4">
-                Especialista em Medicina Estética e pioneiro na técnica de Temporal Face Lifting no Brasil, o Dr. Bruno
-                Marques traz sua vasta experiência e conhecimento para este curso exclusivo.
+              <h3 className="text-xl md:text-3xl font-bold mb-4 text-gray-800">Seu Mentor e Especialista</h3>
+              <p className="text-sm md:text-lg text-gray-600 mb-6">
+                Especialista em Medicina Estética Avançada e pioneiro na técnica de Temporal Face Lifting no Brasil,
+                o Dr. Bruno Marques traz sua vasta experiência e conhecimento para oferecer os melhores resultados
+                aos seus pacientes. Ele é médico e fisioterapeuta formado, especializado em estética facial e
+                corporal, com expertise em técnicas avançadas de rejuvenescimento não cirúrgico.
               </p>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>Mais de 15 anos de experiência em rejuvenescimento facial</li>
-                <li>Desenvolvedor de técnicas inovadoras em lifting não cirúrgico</li>
-                <li>Palestrante internacional em congressos de estética avançada</li>
-              </ul>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-sm md:text-base text-gray-700">
+                    Mais de 15 anos de experiência em procedimentos estéticos
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-sm md:text-base text-gray-700">
+                    Formação internacional em técnicas avançadas de lifting facial
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-sm md:text-base text-gray-700">
+                    Milhares de procedimentos realizados com sucesso
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-sm md:text-base text-gray-700">
+                    Palestrante e instrutor em congressos nacionais e internacionais
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span className="text-sm md:text-base text-gray-700">
+                    Desenvolvedor de técnicas exclusivas para resultados superiores
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-sm md:text-base text-gray-600 italic mb-6">
+                "Meu objetivo é compartilhar todo o conhecimento que adquiri ao longo dos anos, formando profissionais
+                de excelência que possam oferecer resultados excepcionais e seguros aos seus pacientes."
+              </p>
+
+              <Button
+                className="bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white hover:from-[#D4AF37] hover:to-[#C4A052]"
+                onClick={() => window.open("https://wa.me/5547999961355", "_blank")}
+              >
+                Aprenda com Dr. Bruno Marques
+              </Button>
             </div>
           </div>
         </div>

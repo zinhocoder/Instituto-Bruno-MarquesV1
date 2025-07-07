@@ -58,24 +58,24 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+    <header className="top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
       <div className="container mx-auto px-4">
         {isMobile ? (
           // Mobile Header - Redesenhado do zero
-          <div className="py-4 flex justify-between items-center">
+          <div className="py-4 flex justify-center items-center relative">
             <Link href="/" className="z-20">
               <Image
-                src="/brunomarqueslogo.png?height=500&width=500&text=Logo"
+                src="/instituto-11.png"
                 alt="Instituto Bruno Marques"
-                width={50}
-                height={50}
-                className="w-10 h-10"
+                width={128}
+                height={128}
+                className="w-32 h-32 mx-auto"
               />
             </Link>
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="z-20 p-2 rounded-full bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white"
+              className="z-30 p-2 rounded-full bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white absolute right-0 top-1/2 -translate-y-1/2"
               aria-label="Menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
