@@ -54,7 +54,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
               {isMobile ? (
                 // Mobile Header
-                <div className="pt-2 pb-16 flex justify-center items-center relative">
+                <div className="pt-2 pb-16 flex justify-center items-center relative block md:hidden">
                   <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     className="z-30 p-2 rounded-full bg-gradient-to-r from-[#C4A052] to-[#D4AF37] text-white absolute right-0 top-4"
@@ -115,7 +115,7 @@ export default function Home() {
                 </div>
               ) : (
                 // Desktop Header com logo e menu
-                <div className="py-4">
+                <div className="py-4 hidden md:block">
                   <div className="flex items-start relative">
                     <Link href="/" className="z-20">
                       <Image
@@ -126,7 +126,6 @@ export default function Home() {
                         className="w-80 h-80"
                       />
                     </Link>
-                    
                     {/* Menu Desktop Centralizado */}
                     <nav className="absolute top-8 left-1/2 transform -translate-x-1/2 flex space-x-8 bg-gradient-to-r from-[#C4A052] to-[#D4AF37] rounded-full px-8 py-3 shadow-md">
                       <Link href="/" className="text-white hover:text-gray-100 transition-colors duration-300 font-semibold">
@@ -181,7 +180,7 @@ export default function Home() {
             </div>
             
             <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
-              <div className="text-center max-w-4xl mx-auto">
+              <div className="text-center max-w-4xl mx-auto w-full sm:max-w-4xl sm:px-0 px-4 max-w-full sm:max-w-4xl">
                 {/* Título refinado */}
                 <div className="mb-8">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
